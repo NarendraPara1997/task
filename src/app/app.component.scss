@@ -1,0 +1,132 @@
+.circle {
+    margin-left: 5%;
+    width: 12px;
+    height: 12px;
+    border: 1px solid black;
+    /* Yellow background color (you can change it) */
+    border-radius: 50%;
+    /* Make the square a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+    /* White text color (you can change it) */
+}
+
+.container {
+    display: flex;
+    margin-bottom: 3%;
+    align-items: center;
+}
+
+.textbox {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+//   input[type="text"] {
+//     width: 200px;
+//     height: 20px;
+//     padding-right: 50px;
+// }
+
+// input[type="submit"] {
+//     margin-left: -50px;
+//     height: 20px;
+//     width: 50px;
+// }
+#textbox {
+    height: 20px;
+    width: 50%;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    margin-left: 5%;
+}
+
+#buttonBox {
+    height: 26px;
+    width: 10%;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.test_area {
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+.bottomBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomBox1 {
+    background-color: #8d8b8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.box {
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 2%;
+    background-color: #c3c3c3;
+}
+
+.note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    margin: 20px;
+}
+
+.main {
+    width: 50%;
+}
+
+.firstbox {
+    border: 2px solid black;
+}
+
+.insideBox {
+    padding: 20px;
+}
+
+p {
+    font-family: auto;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+.underline {
+    height: 2px;
+    background-color: black;
+}
+
+.footerBox {
+    height: 40px;
+    border: 1px;
+}
+
+.call{
+    margin-left: 5px;
+}
+// .toogle{
+//     color: blue;
+// }
