@@ -62,10 +62,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    background-color: #faa635;
 }
 
 .bottomBox1 {
-    background-color: #8d8b8b;
+    color: white;
+    background-color: #faa635;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +86,7 @@
     padding-left: 7%;
     padding-right: 7%;
     padding-bottom: 2%;
-    background-color: #c3c3c3;
+    background-color: #eff1f2;
 }
 
 .note {
@@ -122,6 +125,7 @@ p {
 .footerBox {
     height: 40px;
     border: 1px;
+    background-color: #faa635;
 }
 
 .call{

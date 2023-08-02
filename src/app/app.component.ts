@@ -11,16 +11,28 @@ export class AppComponent {
     smsValue: boolean = false;
     webhookOne: boolean = false;
     smsValueOne: boolean = false;
+    displayArrow: boolean = false
     webhookChnage() {
         this.webhook = true;
     }
-    SMSChnage(){
+    SMSChnage() {
         this.smsValue = true;
     }
     webhookChnageOne() {
         this.webhookOne = true;
     }
-    SMSChnageOne(){
+    SMSChnageOne() {
         this.smsValueOne = true;
+    }
+    arrowClick() {
+        this.displayArrow = true;
+    }
+    qClickSms: any;
+    QclickSms() {
+        this.qClickSms = true;
+    }
+    qClickwebhook: any;
+    QclickWebHook() {
+        this.qClickwebhook = true;
     }
 }

@@ -11,13 +11,14 @@
                 </div>
 
                 <div class="container">
-                    <mat-slide-toggle checked="" color="primary"> <b>Email </b> </mat-slide-toggle> &nbsp;
-                    <span class="circle">?</span>
+                    <mat-slide-toggle checked="" color="primary" disabled> <b>Email </b> </mat-slide-toggle> &nbsp;
+                    <span class="circle" >?</span>
                 </div>
                 <div class="container">
                     <mat-slide-toggle color="primary"><b> SMS </b></mat-slide-toggle> &nbsp;
-                    <span class="circle">?</span>
-                    <textarea name="" id="" cols="30" rows="3" class="test_area"></textarea>
+                    <span class="circle" (click)="QclickSms()" >?</span>
+                    
+                    <textarea *ngIf="qClickSms" name="" id="" cols="30" rows="3" class="test_area">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
                 </div>
                 <div class="container">
                     <mat-slide-toggle disabled></mat-slide-toggle> <b class="call"> Call </b>&nbsp;
@@ -26,19 +27,19 @@
                 </div>
                 <div class="container">
                     <mat-slide-toggle color="primary"><b> Webhook </b> </mat-slide-toggle> &nbsp;
-                    <span class="circle">?</span>
-                    <input type="text" id="textbox" value="https://">
-                    <button type="submit" id="buttonBox">Save</button>
+                    <span class="circle" (click)="QclickWebHook()">?</span>
+                    <input *ngIf="qClickwebhook" type="text" id="textbox" value="https://">
+                    <button *ngIf="qClickwebhook" type="submit" id="buttonBox">Save</button>
                 </div>
             </div>
             <div class="underline"></div>
-            <div class="bottomBox">
+            <div class="bottomBox" (click)="arrowClick()">
                 <span class="material-icons">arrow_drop_down</span>
             </div>
         </div>
         <hr>
     </div>
-    <div>
+    <div *ngIf="displayArrow">
         <div class="firstbox">
             <div class="insideBox">
                 <div>
@@ -54,8 +55,8 @@
                 </div>
                 <div class="container">
                     <mat-slide-toggle color="primary"><b> SMS </b></mat-slide-toggle> &nbsp;
-                    <span class="circle">?</span>
-                    <textarea name="" id="" cols="30" rows="3" class="test_area"></textarea>
+                    <span class="circle" (click)="QclickSms()">?</span>
+                    <textarea *ngIf="qClickSms" name="" id="" cols="30" rows="3" class="test_area">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
                 </div>
                 <div class="container">
                     <mat-slide-toggle disabled></mat-slide-toggle> <b class="call"> Call </b>&nbsp;
@@ -92,7 +93,7 @@
                         <div class="container">
                             <mat-slide-toggle color="primary" (change)="SMSChnageOne()"><b> SMS </b></mat-slide-toggle>
                             &nbsp;
-                            <textarea name="" id="" *ngIf="smsValueOne" cols="30" rows="3" class="test_area"></textarea>
+                            <textarea *ngIf="smsValueOne" name="" id="" cols="30" rows="3" class="test_area">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
                         </div>
                         <div class="container">
                             <mat-slide-toggle disabled></mat-slide-toggle> <b class="call"> Call </b>&nbsp;
@@ -121,9 +122,8 @@
                         <div class="container">
                             <mat-slide-toggle color="primary" (change)="SMSChnage()"><b> SMS </b></mat-slide-toggle>
                             &nbsp;
-
-                            <textarea *ngIf="smsValue" name="" id="" cols="30" rows="3" class="test_area"></textarea>
-                        </div>
+                            <textarea *ngIf="smsValue" name="" id="" cols="30" rows="3" class="test_area">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea>
+                         </div>
                         <div class="container">
                             <mat-slide-toggle disabled></mat-slide-toggle> <b class="call"> Call </b>&nbsp;
 
